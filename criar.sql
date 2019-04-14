@@ -57,7 +57,6 @@ CREATE TABLE Dia (
 CREATE TABLE Banda (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
-  membros TEXT, /* Devia ser outra tabela?*/
   contacto TEXT
 )
 
@@ -76,6 +75,13 @@ CREATE TABLE GeneroBanda (
   bandaId INTEGER NOT NULL,
   generoId INTEGER NOT NULL,
   PRIMARY KEY (bandaId, generoId)
+)
+
+/* many-to-many membro banda */
+CREATE TABLE MembroBanda (
+  bandaId INTEGER NOT NULL,
+  membroId INTEGER NOT NULL,
+  PRIMARY KEY (bandaId, membroId)
 )
 
 
