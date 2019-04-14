@@ -164,12 +164,12 @@ INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (6,3,1,1);
 
 
 /*Insert Restauracao */
-INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (11,7,27);
-INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (12,6,32);
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (7,7,27);
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (8,6,32);
 
 
 /*Insert Campismo */
-INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (16,2,11);
+INSERT INTO Campismo (infraestruturaId, campingZones, trashCans) VALUES (9,2,11);
 
 
 /*Insert GeneroPalco */
@@ -192,6 +192,10 @@ INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Romain Grosjean','Diur
 INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Kimi Raikkonen','Diurno',0);
 INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Daniel Ricciardo','Diurno',0);
 INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Robert Kubica','Diurno',1);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('George Russel','Noturno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Lando Noris','Noturno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Alexander Albon','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Nico Hulkenberg','Diurno',0);
 
 /*Insert SubContratado*/
 INSERT INTO SubContratado (staffId, empresa) VALUES (1,'Ferreiras Ltd.');
@@ -208,11 +212,27 @@ INSERT INTO Sponsor (staffId, empresa) VALUES (9,'Haas');
 INSERT INTO Sponsor (staffId, empresa) VALUES (10,'Alfa Romeo');
 INSERT INTO Sponsor (staffId, empresa) VALUES (11,'Renault');
 INSERT INTO Sponsor (staffId, empresa) VALUES (12,'Williams');
+INSERT INTO Sponsor (staffId, empresa) VALUES (13,'Williams');
+INSERT INTO Sponsor (staffId, empresa) VALUES (14,'McLaren');
+INSERT INTO Sponsor (staffId, empresa) VALUES (15,'Toro Rosso');
+INSERT INTO Sponsor (staffId, empresa) VALUES (16,'Renault');
+
 
 /*Insert StaffInfraestrutura*/
-INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
-INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
-INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
-INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
-INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (1,1);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (2,1);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (3,2);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (4,3);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (5,4);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (6,5);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (7,5);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (8,6);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (9,6);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (10,7);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (11,8);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (12,9);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (13,2);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (14,3);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (15,8);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (16,9);
 
