@@ -83,7 +83,9 @@ CREATE TABLE GeneroBanda (
 
 CREATE TABLE Infrastrutura (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  disponibilidade INTEGER
+  disponibilidade INTEGER,
+  capacidade INTEGER,
+  localizacao TEXT
 );
 
 /* < Sub classes de infrastrutura > */
@@ -120,7 +122,10 @@ CREATE TABLE GeneroPalco (
 );
 
 CREATE TABLE Staff (
-  id INTEGER PRIMARY KEY AUTOINCREMENT
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT,
+  turno TEXT,
+  disponibilidade INTEGER
 );
 
 CREATE TABLE SubContrato (
