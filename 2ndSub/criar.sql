@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS Dia;
 DROP TABLE IF EXISTS Banda;
 
 DROP TABLE IF EXISTS Membro;
+DROP TABLE IF EXISTS MembroBanda;
 
 DROP TABLE IF EXISTS Genero;
 DROP TABLE IF EXISTS Palco;
@@ -19,7 +20,7 @@ DROP TABLE IF EXISTS Restauracao;
 DROP TABLE IF EXISTS Campismo;
 
 DROP TABLE IF EXISTS Staff;
-DROP TABLE IF EXISTS SubContrato;
+DROP TABLE IF EXISTS SubContratado;
 DROP TABLE IF EXISTS Sponsor;
 
 DROP TABLE IF EXISTS GeneroPalco;
@@ -34,7 +35,7 @@ CREATE TABLE Cliente (
 
 CREATE TABLE Bilhete (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  clientId INTEGER REFERENCES Client(id)
+  clientId INTEGER REFERENCES Cliente(id)
 );
 
 /* < Sub classes de bilhete > */
@@ -127,13 +128,13 @@ CREATE TABLE GeneroPalco (
 );
 
 CREATE TABLE Staff (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   nome TEXT,
   turno TEXT,
   disponibilidade INTEGER
 );
 
-CREATE TABLE SubContrato (
+CREATE TABLE SubContratado (
   staffId INTEGER PRIMARY KEY REFERENCES Staff(id),
   empresa TEXT
 );

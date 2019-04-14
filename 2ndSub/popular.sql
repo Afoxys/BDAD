@@ -129,7 +129,7 @@ INSERT INTO Genero (name) VALUES ('Indie Rock');
 
 /*Insert GeneroBanda*/
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (1,1);
-INSERT INTO GeneroBanda (bandaId, generoId) VALUES (1,1);
+INSERT INTO GeneroBanda (bandaId, generoId) VALUES (2,1);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (3,3);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (4,4);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (5,3);
@@ -141,27 +141,16 @@ INSERT INTO GeneroBanda (bandaId, generoId) VALUES (10,3);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (11,1);
 
 /*Insert Infraestrutura */
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
-INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Principal');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Secundario');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Alternativo');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Comedia');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Zona Comum');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Campismo A');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Principal');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Relvado Comedia');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Campismo A');
+
 
 /*Insert Palco */
 INSERT INTO Palco (infraestruturaId, name) VALUES (1,'Principal');
@@ -172,32 +161,58 @@ INSERT INTO Palco (infraestruturaid, name) VALUES (4,'Comedia');
 /*Insert WC */
 INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (5,2,2,2);
 INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (6,3,1,1);
-INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (7,1,3,4);
-INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (8,0,1,1);
-INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (9,2,2,2);
-INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (10,2,3,0);
+
 
 /*Insert Restauracao */
 INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (11,7,27);
 INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (12,6,32);
-INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (13,5,43);
-INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (14,9,89);
-INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (15,11,99);
+
 
 /*Insert Campismo */
 INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (16,2,11);
-INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (17,1,9);
-INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (18,3,7);
-INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (19,4,12);
+
 
 /*Insert GeneroPalco */
-INSERT INTO GeneroPalco (palcoId, generoId) VALUES (1,);
-INSERT INTO GeneroPalco (palcoId, generoId) VALUES (2,);
-INSERT INTO GeneroPalco (palcoId, generoId) VALUES (3,);
-INSERT INTO GeneroPalco (palcoId, generoId) VALUES (4,);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (1,1);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (2,2);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (3,3);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (4,4);
 
 /*Insert Staff*/
-INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Joaquim Ferreira',,0);
-INSERT INTO Staff (nome, turno, disponibilidade) VALUES (,,1);
-INSERT INTO Staff (nome, turno, disponibilidade) VALUES (,,1);
-INSERT INTO Staff (nome, turno, disponibilidade) VALUES (,,0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Joaquim Ferreira','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Joao Ferreira','Noturno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Jose Ferreira','Noturno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Joaquim Ferreira','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Antonio Giovinazzi','Noturno',1);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Sebastian Vettel','Noturno',1);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Lewis Hamilton','Noturno',1);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Valtteri Bottas','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Charles Leclerc','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Romain Grosjean','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Kimi Raikkonen','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Daniel Ricciardo','Diurno',0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Robert Kubica','Diurno',1);
+
+/*Insert SubContratado*/
+INSERT INTO SubContratado (staffId, empresa) VALUES (1,'Ferreiras Ltd.');
+INSERT INTO SubContratado (staffId, empresa) VALUES (2,'Ferreiras Ltd.');
+INSERT INTO SubContratado (staffId, empresa) VALUES (3,'Ferreiras Ltd.');
+
+/*Insert Sponsor*/
+INSERT INTO Sponsor (staffId, empresa) VALUES (4,'Alfa Romeo');
+INSERT INTO Sponsor (staffId, empresa) VALUES (5,'Scuderia Ferrari');
+INSERT INTO Sponsor (staffId, empresa) VALUES (6,'Mercedes GP');
+INSERT INTO Sponsor (staffId, empresa) VALUES (7,'Mercedes GP');
+INSERT INTO Sponsor (staffId, empresa) VALUES (8,'Scuderia Ferrari');
+INSERT INTO Sponsor (staffId, empresa) VALUES (9,'Haas');
+INSERT INTO Sponsor (staffId, empresa) VALUES (10,'Alfa Romeo');
+INSERT INTO Sponsor (staffId, empresa) VALUES (11,'Renault');
+INSERT INTO Sponsor (staffId, empresa) VALUES (12,'Williams');
+
+/*Insert StaffInfraestrutura*/
+INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
+INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
+INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
+INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
+INSERT INTO StaffInfraestrutura (staffId, empresa) VALUES (4,'Alfa Romeo');
+
