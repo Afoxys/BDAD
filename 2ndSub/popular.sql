@@ -1,19 +1,19 @@
 /*Inserting Clients*/
-INSERT INTO Cliente (name, NIF) VALUES ("Afonso Sá",211000333);
-INSERT INTO Cliente (name, NIF) VALUES ("André Serralheiro",214840563);
-INSERT INTO Cliente (name, NIF) VALUES ("Luis Marques",210084666);
-INSERT INTO Cliente (name, NIF) VALUES ("Joao Diogo",210084655);
-INSERT INTO Cliente (name, NIF) VALUES ("Joana Fernandes",210235611);
-INSERT INTO Cliente (name, NIF) VALUES ("Manuel Constantino",210774816);
-INSERT INTO Cliente (name, NIF) VALUES ("Guilherme Pinto",210852963);
-INSERT INTO Cliente (name, NIF) VALUES ("Ana Maria",210258369);
-INSERT INTO Cliente (name, NIF) VALUES ("Fernando Mesquita",210754396);
-INSERT INTO Cliente (name, NIF) VALUES ("Catarina Torres",210761943);
-INSERT INTO Cliente (name, NIF) VALUES ("Carla Guimaraes",210761553);
-INSERT INTO Cliente (name, NIF) VALUES ("Giliano Boucinha",217512243);
-INSERT INTO Cliente (name, NIF) VALUES ("Susana Carvalho",220000123);
-INSERT INTO Cliente (name, NIF) VALUES ("Ricardo Lopes",212121212);
-INSERT INTO Cliente (name, NIF) VALUES ("Duarte Granja",210022214);
+INSERT INTO Cliente (name, NIF) VALUES ('Afonso Sá',211000333);
+INSERT INTO Cliente (name, NIF) VALUES ('André Serralheiro',214840563);
+INSERT INTO Cliente (name, NIF) VALUES ('Luis Marques',210084666);
+INSERT INTO Cliente (name, NIF) VALUES ('Joao Diogo',210084655);
+INSERT INTO Cliente (name, NIF) VALUES ('Joana Fernandes',210235611);
+INSERT INTO Cliente (name, NIF) VALUES ('Manuel Constantino',210774816);
+INSERT INTO Cliente (name, NIF) VALUES ('Guilherme Pinto',210852963);
+INSERT INTO Cliente (name, NIF) VALUES ('Ana Maria',210258369);
+INSERT INTO Cliente (name, NIF) VALUES ('Fernando Mesquita',210754396);
+INSERT INTO Cliente (name, NIF) VALUES ('Catarina Torres',210761943);
+INSERT INTO Cliente (name, NIF) VALUES ('Carla Guimaraes',210761553);
+INSERT INTO Cliente (name, NIF) VALUES ('Giliano Boucinha',217512243);
+INSERT INTO Cliente (name, NIF) VALUES ('Susana Carvalho',220000123);
+INSERT INTO Cliente (name, NIF) VALUES ('Ricardo Lopes',212121212);
+INSERT INTO Cliente (name, NIF) VALUES ('Duarte Granja',210022214);
 
 /*Inserting Ticket*/
 INSERT INTO Bilhete (clientId) VALUES (1);
@@ -58,42 +58,42 @@ INSERT INTO Diario (bilheteId, price, dayId) VALUES (14,50,4);
 INSERT INTO Diario (bilheteId, price, dayId) VALUES (15,50,4);
 
 /*Insert Bands*/
-INSERT INTO Banda (name, contacto) VALUES ("Crumb",912454676);
-INSERT INTO Banda (name, contacto) VALUES ("Angel Olsen",912444676);
-INSERT INTO Banda (name, contacto) VALUES ("Phoebe Bridgers",918958876);
-INSERT INTO Banda (name, contacto) VALUES ("Mac DeMarco",912454123);
-INSERT INTO Banda (name, contacto) VALUES ("Father John Misty",912454852);
-INSERT INTO Banda (name, contacto) VALUES ("St. Vincent",912753656);
-INSERT INTO Banda (name, contacto) VALUES ("Arctic Monkeys",912745121);
-INSERT INTO Banda (name, contacto) VALUES ("Capitao Fausto",966454676);
-INSERT INTO Banda (name, contacto) VALUES ("BOCC",912451234);
-INSERT INTO Banda (name, contacto) VALUES ("Julia Jacklin",912455418);
-INSERT INTO Banda (name, contacto) VALUES ("Khruangbin",922454741);
+INSERT INTO Banda (name, contacto) VALUES ('Crumb',912454676);
+INSERT INTO Banda (name, contacto) VALUES ('Angel Olsen',912444676);
+INSERT INTO Banda (name, contacto) VALUES ('Phoebe Bridgers',918958876);
+INSERT INTO Banda (name, contacto) VALUES ('Mac DeMarco',912454123);
+INSERT INTO Banda (name, contacto) VALUES ('Father John Misty',912454852);
+INSERT INTO Banda (name, contacto) VALUES ('St. Vincent',912753656);
+INSERT INTO Banda (name, contacto) VALUES ('Arctic Monkeys',912745121);
+INSERT INTO Banda (name, contacto) VALUES ('Capitao Fausto',966454676);
+INSERT INTO Banda (name, contacto) VALUES ('BOCC',912451234);
+INSERT INTO Banda (name, contacto) VALUES ('Julia Jacklin',912455418);
+INSERT INTO Banda (name, contacto) VALUES ('Khruangbin',922454741);
 
 /*Insert band members*/
-INSERT INTO Membro (name) VALUES ("Lila Ramani");
-INSERT INTO Membro (name) VALUES ("Jesse Brotter ");
-INSERT INTO Membro (name) VALUES ("Brian Aronow");
-INSERT INTO Membro (name) VALUES ("Jonathan Gilad");
-INSERT INTO Membro (name) VALUES ("Angel Olsen");
-INSERT INTO Membro (name) VALUES ("Phoebe Bridgers");
-INSERT INTO Membro (name) VALUES ("Marshall Vore");
-INSERT INTO Membro (name) VALUES ("Mac DeMarco");
-INSERT INTO Membro (name) VALUES ("Andrew Charles White");
-INSERT INTO Membro (name) VALUES ("John Lent");
-INSERT INTO Membro (name) VALUES ("Josh Tillman");
-INSERT INTO Membro (name) VALUES ("Annie Clark");
-INSERT INTO Membro (name) VALUES ("Matt Helders");
-INSERT INTO Membro (name) VALUES ("Alex Turner");
-INSERT INTO Membro (name) VALUES ("Nick O'Malley");
-INSERT INTO Membro (name) VALUES ("Tomas Wallenstein");
-INSERT INTO Membro (name) VALUES ("Domingos Coimbra");
-INSERT INTO Membro (name) VALUES ("Manuel Palha");
-INSERT INTO Membro (name) VALUES ("Conor Oberst");
-INSERT INTO Membro (name) VALUES ("Julia Jacklin");
-INSERT INTO Membro (name) VALUES ("Laura Lee");
-INSERT INTO Membro (name) VALUES ("Mark Speer");
-INSERT INTO Membro (name) VALUES ("Donald Johnson");
+INSERT INTO Membro (name) VALUES ('Lila Ramani');
+INSERT INTO Membro (name) VALUES ('Jesse Brotter ');
+INSERT INTO Membro (name) VALUES ('Brian Aronow');
+INSERT INTO Membro (name) VALUES ('Jonathan Gilad');
+INSERT INTO Membro (name) VALUES ('Angel Olsen');
+INSERT INTO Membro (name) VALUES ('Phoebe Bridgers');
+INSERT INTO Membro (name) VALUES ('Marshall Vore');
+INSERT INTO Membro (name) VALUES ('Mac DeMarco');
+INSERT INTO Membro (name) VALUES ('Andrew Charles White');
+INSERT INTO Membro (name) VALUES ('John Lent');
+INSERT INTO Membro (name) VALUES ('Josh Tillman');
+INSERT INTO Membro (name) VALUES ('Annie Clark');
+INSERT INTO Membro (name) VALUES ('Matt Helders');
+INSERT INTO Membro (name) VALUES ('Alex Turner');
+INSERT INTO Membro (name) VALUES ('Nick O Malley');
+INSERT INTO Membro (name) VALUES ('Tomas Wallenstein');
+INSERT INTO Membro (name) VALUES ('Domingos Coimbra');
+INSERT INTO Membro (name) VALUES ('Manuel Palha');
+INSERT INTO Membro (name) VALUES ('Conor Oberst');
+INSERT INTO Membro (name) VALUES ('Julia Jacklin');
+INSERT INTO Membro (name) VALUES ('Laura Lee');
+INSERT INTO Membro (name) VALUES ('Mark Speer');
+INSERT INTO Membro (name) VALUES ('Donald Johnson');
 
 /*Insert MembroBanda*/
 INSERT INTO MembroBanda (bandaId, membroId) VALUES (1,1);
@@ -122,10 +122,10 @@ INSERT INTO MembroBanda (bandaId, membroId) VALUES (11,22);
 INSERT INTO MembroBanda (bandaId, membroId) VALUES (11,23);
 
 /*Insert Music Genre*/
-INSERT INTO Genero (name) VALUES ("Psychedelic");
-INSERT INTO Genero (name) VALUES ("Synth Rock");
-INSERT INTO Genero (name) VALUES ("Folk");
-INSERT INTO Genero (name) VALUES ("Indie Rock");
+INSERT INTO Genero (name) VALUES ('Psychedelic');
+INSERT INTO Genero (name) VALUES ('Synth Rock');
+INSERT INTO Genero (name) VALUES ('Folk');
+INSERT INTO Genero (name) VALUES ('Indie Rock');
 
 /*Insert GeneroBanda*/
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (1,1);
@@ -139,3 +139,65 @@ INSERT INTO GeneroBanda (bandaId, generoId) VALUES (8,4);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (9,3);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (10,3);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (11,1);
+
+/*Insert Infraestrutura */
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (1);
+INSERT INTO Infraestrutura (disponibilidade) VALUES (0);
+
+/*Insert Palco */
+INSERT INTO Palco (infraestruturaId, name) VALUES (1,'Principal');
+INSERT INTO Palco (infraestruturaid, name) VALUES (2,'Secundário');
+INSERT INTO Palco (infraestruturaid, name) VALUES (3,'Alternativo');
+INSERT INTO Palco (infraestruturaid, name) VALUES (4,'Comedia');
+
+/*Insert WC */
+INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (5,2,2,2);
+INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (6,3,1,1);
+INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (7,1,3,4);
+INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (8,0,1,1);
+INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (9,2,2,2);
+INSERT INTO WC (infraestruturaId, showers, toilets, sinks) VALUES (10,2,3,0);
+
+/*Insert Restauracao */
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (11,7,27);
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (12,6,32);
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (13,5,43);
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (14,9,89);
+INSERT INTO Restauracao (infraestruturaId, tables, chairs) VALUES (15,11,99);
+
+/*Insert Campismo */
+INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (16,2,11);
+INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (17,1,9);
+INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (18,3,7);
+INSERT INTO Campismo (insfraestruturaId, campingZones, trashCans) VALUES (19,4,12);
+
+/*Insert GeneroPalco */
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (1,);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (2,);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (3,);
+INSERT INTO GeneroPalco (palcoId, generoId) VALUES (4,);
+
+/*Insert Staff*/
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES ('Joaquim Ferreira',,0);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES (,,1);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES (,,1);
+INSERT INTO Staff (nome, turno, disponibilidade) VALUES (,,0);
