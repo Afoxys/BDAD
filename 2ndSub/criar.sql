@@ -13,7 +13,7 @@ DROP TABLE IF EXISTS Membro;
 DROP TABLE IF EXISTS Genero;
 DROP TABLE IF EXISTS Palco;
 
-DROP TABLE IF EXISTS Infrastrutura;
+DROP TABLE IF EXISTS Infraestrutura;
 DROP TABLE IF EXISTS WC;
 DROP TABLE IF EXISTS Restauracao;
 DROP TABLE IF EXISTS Campismo;
@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS Sponsor;
 
 DROP TABLE IF EXISTS GeneroPalco;
 DROP TABLE IF EXISTS GeneroBanda;
-DROP TABLE IF EXISTS StaffInfrastrutura;
+DROP TABLE IF EXISTS StaffInfraestrutura;
 
 CREATE TABLE Cliente (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -86,36 +86,38 @@ CREATE TABLE GeneroBanda (
   PRIMARY KEY (bandaId, generoId)
 );
 
-CREATE TABLE Infrastrutura (
+CREATE TABLE Infraestrutura (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  disponibilidade INTEGER
+  disponibilidade INTEGER,
+  capacidade INTEGER,
+  localizacao TEXT
 );
 
-/* < Sub classes de infrastrutura > */
+/* < Sub classes de infraestrutura > */
 CREATE TABLE Palco (
-  infrastruturaId INTEGER PRIMARY KEY REFERENCES Infrastrutura(id),
+  infraestruturaId INTEGER PRIMARY KEY REFERENCES Infraestrutura(id),
   name TEXT
 );
 
 CREATE TABLE WC (
-  infrastruturaId INTEGER PRIMARY KEY REFERENCES Infrastrutura(id),
+  infraestruturaId INTEGER PRIMARY KEY REFERENCES Infraestrutura(id),
   showers INTEGER,
   toilets INTEGER,
   sinks INTEGER
 );
 
 CREATE TABLE Restauracao (
-  infrastruturaId INTEGER PRIMARY KEY REFERENCES Infrastrutura(id),
+  infraestruturaId INTEGER PRIMARY KEY REFERENCES Infraestrutura(id),
   tables INTEGER,
   chairs INTEGER
 );
 
 CREATE TABLE Campismo (
-  infrastruturaId INTEGER PRIMARY KEY REFERENCES Infrastrutura(id),
+  infraestruturaId INTEGER PRIMARY KEY REFERENCES Infraestrutura(id),
   campingZones INTEGER,
   trashCans INTEGER
 );
-/* </ Sub classes de infrastrutura > */
+/* </ Sub classes de infraestrutura > */
 
 /* many-to-many genero palco */
 CREATE TABLE GeneroPalco (
@@ -125,7 +127,10 @@ CREATE TABLE GeneroPalco (
 );
 
 CREATE TABLE Staff (
-  id INTEGER PRIMARY KEY AUTOINCREMENT
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT,
+  turno TEXT,
+  disponibilidade INTEGER
 );
 
 CREATE TABLE SubContrato (
@@ -138,9 +143,9 @@ CREATE TABLE Sponsor (
   empresa TEXT
 );
 
-/* many-to-many staff infrastrutura  */
-CREATE TABLE StaffInfrastrutura (
+/* many-to-many staff infraestrutura  */
+CREATE TABLE StaffInfraestrutura (
   staffId INTEGER NOT NULL REFERENCES Staff(id),
-  infrastruturaId INTEGER NOT NULL REFERENCES Infrastrutura(id),
-  PRIMARY KEY (staffId, infrastruturaId)
+  infraestruturaId INTEGER NOT NULL REFERENCES Infraestrutura(id),
+  PRIMARY KEY (staffId, infraestruturaId)
 );
