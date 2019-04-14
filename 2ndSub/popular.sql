@@ -33,10 +33,10 @@ INSERT INTO Bilhete (clientId) VALUES (14);
 INSERT INTO Bilhete (clientId) VALUES (15);
 
 /*Insert Day*/
-INSERT INTO Dia (date, startHour, endHour) VALUES (15,1300,0200);
-INSERT INTO Dia (date, startHour, endHour) VALUES (16,1400,0400);
-INSERT INTO Dia (date, startHour, endHour) VALUES (17,1400,0400);
-INSERT INTO Dia (date, startHour, endHour) VALUES (18,1400,0400);
+INSERT INTO Dia (date, startHour, endHour) VALUES ('15-08-2019',2000,0200);
+INSERT INTO Dia (date, startHour, endHour) VALUES ('16-08-2019',1900,0200);
+INSERT INTO Dia (date, startHour, endHour) VALUES ('17-08-2019',1900,0200);
+INSERT INTO Dia (date, startHour, endHour) VALUES ('18-08-2019',1900,0200);
 
 /*Inserting Full Ticket*/
 INSERT INTO Geral (bilheteId, price) VALUES (1,94);
@@ -236,3 +236,15 @@ INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (14,3);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (15,8);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (16,9);
 
+/*Insert Horario*/
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (1,3,1,2000,2300);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (2,1,1,2300,0200);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (3,4,2,1900,2100);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (4,2,2,2100,2300);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (5,1,2,2300,0200);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (6,4,3,1900,2100);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (7,2,3,2100,2300);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (8,1,3,2300,0200);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (9,3,4,1900,2100);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (10,2,4,2100,2300);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (11,1,4,2300,2300);

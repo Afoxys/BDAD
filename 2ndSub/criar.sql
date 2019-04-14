@@ -27,6 +27,9 @@ DROP TABLE IF EXISTS GeneroPalco;
 DROP TABLE IF EXISTS GeneroBanda;
 DROP TABLE IF EXISTS StaffInfraestrutura;
 
+DROP TABLE IF EXISTS Horario;
+
+
 CREATE TABLE Cliente (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
@@ -53,7 +56,7 @@ CREATE TABLE Diario (
 
 CREATE TABLE Dia (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  date DATETIME,
+  date TEXT,
   startHour INTEGER,
   endHour INTEGER
 );
@@ -149,4 +152,13 @@ CREATE TABLE StaffInfraestrutura (
   staffId INTEGER NOT NULL REFERENCES Staff(id),
   infraestruturaId INTEGER NOT NULL REFERENCES Infraestrutura(id),
   PRIMARY KEY (staffId, infraestruturaId)
+);
+
+CREATE TABLE Horario (
+  bandaId INTEGER NOT NULL REFERENCES Banda(id),
+  palcoId INTEGER NOT NULL REFERENCES Palco(id),
+  diaId INTEGER NOT NULL REFERENCES Dia(id),
+  inicio INTEGER NOT NULL,
+  fim INTEGER NOT NULL,
+  PRIMARY KEY (bandaId, palcoId, diaId)
 );
