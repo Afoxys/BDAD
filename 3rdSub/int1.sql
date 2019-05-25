@@ -1,6 +1,6 @@
-.mode collumns;
-.headers on;
-.nullvalue NULL;
+.mode column
+.headers on
+.nullvalue NULL
 
 
 SELECT membroId, COUNT(*)
