@@ -599,4 +599,4 @@ INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (18,3,3,1900,2
 INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (19,1,4,2000,2200);
 INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (20,1,4,2200,0000);
 INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (21,1,4,0000,0200);
-INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (1,1,3,2100,2200);
+INSERT INTO Horario (bandaId, palcoId, diaId, inicio, fim) VALUES (1,2,1,1800,1900);
