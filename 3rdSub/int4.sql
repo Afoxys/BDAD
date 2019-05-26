@@ -2,8 +2,6 @@
 .headers on
 .nullvalue NULL
 
-
-SELECT Diario.dayId, COUNT(*)
- FROM Diario
- GROUP BY dayId;
-
+SELECT Infraestrutura.localizacao
+FROM Infraestrutura
+WHERE Infraestrutura.capacidade > 200 and Infraestrutura.disponibilidade != 0;
