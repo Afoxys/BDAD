@@ -427,16 +427,16 @@ INSERT INTO GeneroBanda (bandaId, generoId) VALUES (21,6);
 INSERT INTO GeneroBanda (bandaId, generoId) VALUES (21,7);
 
 /*Insert Infraestrutura */
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Principal');
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Secundario');
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Alternativo');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,1500,'Relvado Principal');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,500,'Relvado Secundario');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,250,'Relvado Alternativo');
 INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Zona Comum A');
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Zona Comum B');
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Campismo A');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,1000,'Zona Comum B');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,300,'Campismo A');
 INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Relvado Principal');
 INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,100,'Relvado Alternativo');
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Campismo A');
-INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Campismo A');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (1,250,'Campismo A');
+INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,200,'Campismo A');
 INSERT INTO Infraestrutura (disponibilidade,capacidade,localizacao) VALUES (0,100,'Campismo B');
 
 
@@ -558,6 +558,7 @@ INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (10,5);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (11,6);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (12,6);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (13,7);
+INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (13,1);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (14,7);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (15,8);
 INSERT INTO StaffInfraestrutura (staffId, infraestruturaId) VALUES (16,8);
