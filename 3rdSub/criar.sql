@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS Pessoa;
 DROP TABLE IF EXISTS Cliente;
 
 DROP TABLE IF EXISTS Bilhete;
@@ -29,16 +30,19 @@ DROP TABLE IF EXISTS StaffInfraestrutura;
 
 DROP TABLE IF EXISTS Horario;
 
+CREATE TABLE Pessoa (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT
+);
 
 CREATE TABLE Cliente (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT,
+  pessoaId INTEGER REFERENCES Pessoa(id),
   NIF TEXT UNIQUE
 );
 
 CREATE TABLE Bilhete (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  clientId INTEGER REFERENCES Cliente(id)
+  clienteId INTEGER REFERENCES Cliente(id)
 );
 
 /* < Sub classes de bilhete > */
@@ -69,7 +73,7 @@ CREATE TABLE Banda (
 
 CREATE TABLE Membro (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT
+  pessoaId INTEGER REFERENCES Pessoa(id)
 );
 
 CREATE TABLE MembroBanda (
@@ -132,7 +136,7 @@ CREATE TABLE GeneroPalco (
 
 CREATE TABLE Staff (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  nome TEXT,
+  pessoaId INTEGER REFERENCES Pessoa(id),
   turno TEXT,
   disponibilidade INTEGER
 );
